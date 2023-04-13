@@ -1,0 +1,173 @@
+.ig_idea_loading_first, .ig_idea_loading_second{
+    display: none;
+}
+.hero_container{
+    text-align: center;
+    width: 100%;
+}
+.hero_container h2{
+    font-size: 45px;
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 35px;
+    color: #1C2654;
+}
+.hero_container .inner_container{
+    border: 1px solid #499BFF;
+    border-radius: 25px;
+    padding: 60px 10px 30px;
+    width: 100%;
+	height: 100%;
+    min-height: 380px;
+    position: relative;
+}
+.hero_container .inner_container.ig_line_container::before {
+    content: "";
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    width: 104%;
+    height: 112%;
+    position: absolute;
+    left: -999px;
+    right: -999px;
+    top: -8px;
+    bottom: 0;
+    z-index: 0;
+    margin: auto;
+}
+.hero_container .inner_container.button_animation_container{
+    position: relative;
+}
+.hero_container .inner_container.button_animation_container::after{
+    content: "";
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    width: 17%;
+    height: 70%;
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    z-index: -1;
+}
+.hero_container .inner_container h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #000;
+    margin: 15px 0;
+}
+
+.hero_container .ig_idea_loading_second img{
+	max-height: 290px;
+}
+
+.hero_container .ig_idea_loading_third{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+	width: 250px;
+	height: 250px;
+    z-index: 1;
+}
+
+.hero_container .inner_container .switch-heading p{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #499BFF;
+    margin: 0;
+}
+
+.hero_container .inner_container p.generated_idea{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #000;
+    margin: 60px 0;
+}
+.hero_container .inner_container .buttons_container{
+    min-height: 40px;
+}
+.hero_container .inner_container .generate_idea_btn {
+    background: #499BFF;
+    color: #fff;
+    border: 2px solid #499BFF;
+    padding: 16px 30px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    padding-right: 55px;
+    position: relative;
+	z-index: 99;
+}
+.hero_container .inner_container .buttons_container span::after{
+    content: "";
+    background-repeat: no-repeat !important;
+    background-size: 30px 25px !important;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 14px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(0.75turn);
+	z-index: 99;
+}
+.hero_container .inner_container .generate_idea_btn:hover, .hero_container .inner_container .generate_idea_btn:focus{
+    background: #499BFF;
+    color: #fff;
+}
+
+.hero_container .inner_container a.reset_idea_btn {
+    background: transparent;
+    color: #499BFF;
+    border: 2px solid #499BFF;
+    padding: 12px 40px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none !important;
+}
+.hero_container .inner_container a.reset_idea_btn:hover, a.reset_idea_btn:focus{
+    background: transparent;
+    color: #499BFF;
+}
+
+@media(max-width: 760px){
+    .hero_container .ig_idea_loading_third{
+		width: 160px;
+	}
+	.hero_container .ig_idea_loading_second img{
+		max-height: 300px;
+	}
+}
+@media(max-width: 635px){
+    .hero_container .inner_container.ig_line_container::before{
+        display: none;
+    }
+}
+@media(max-width: 374px){
+    .hero_container .inner_container .buttons_container{
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+	.hero_container .inner_container .buttons_container span::after{
+		right: 60px;
+	}
+}
+
+
+/* else{
+    jQuery('.ig_main_content').hide();
+    setTimeout(function(){
+        jQuery('.ig_idea_loading_second').fadeIn(400).delay(2000).fadeOut(400, function(){
+            jQuery('.ig_main_content').fadeIn(400);
+        });
+    }, 2000);
+} */
